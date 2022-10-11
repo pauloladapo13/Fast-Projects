@@ -5,11 +5,11 @@ qr = qrcode.QRCode(version = 1, error_correction= qrcode.constants.ERROR_CORRECT
                     box_size = 30,
                     border=3)
 
-qr.add_data("https://www.youtube.com/watch?v=lbZCpO8K2ks")
+qr.add_data("whats your question?")
 qr.make(fit=True)
 
-img = qr.make_image(fill_color = "cyan", back_color = "purple")
-img.save("qrcode4.png")
+img = qr.make_image(fill_color = "white", back_color = "red")
+img.save("qrcode1.png")
 
 
 # d = cv2.QRCodeDetector()
